@@ -9,15 +9,7 @@ public class Employees {
         this.surname = builder.surname;
         this.login_Credentials = builder.login_Credentials;
     }
-    @Override
-    public String toString() {
-        return "Builder{" +
-                "emp_Num='" + emp_Num + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", surname='" + surname + '\'' +
-                ", login_Credentials='" + login_Credentials + '\'' +
-                '}';
-    }
+
     public static class Builder{
         private String emp_Num, firstName, surname, login_Credentials;
 
@@ -50,4 +42,31 @@ public class Employees {
        }
 
     }//inner class
+
+    @Override
+    public String toString() {
+        return "Builder{" +
+                "emp_Num='" + emp_Num + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", surname='" + surname + '\'' +
+                ", login_Credentials='" + login_Credentials + '\'' +
+                '}';
+    }
+
+    public String getEmp_Num() {
+        return emp_Num;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getLogin_Credentials() {
+        return login_Credentials;
+    }
+
 }//class
