@@ -45,11 +45,11 @@ public class Employees {
 
     @Override
     public String toString() {
-        return "Builder{" +
-                "emp_Num='" + emp_Num + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", surname='" + surname + '\'' +
-                ", login_Credentials='" + login_Credentials + '\'' +
+        return "Employee{" +
+                "Employee Number='" + emp_Num + '\'' +
+                ", First Name='" + firstName + '\'' +
+                ", Surname='" + surname + '\'' +
+                ", Login Credentials='" + login_Credentials + '\'' +
                 '}';
     }
 
