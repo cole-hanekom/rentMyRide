@@ -30,8 +30,9 @@ public class Client {
     public static class Builder{
         private String clientID,firstName,surname,accountNumber;
 
-        public void setClientID(String clientID) {
+        public Builder setClientID(String clientID) {
             this.clientID = clientID;
+            return this;
         }
 
         public Builder setFirstName(String firstName) {
@@ -44,8 +45,9 @@ public class Client {
             return this;
         }
 
-        public void setAccountNumber(String accountNumber) {
+        public Builder setAccountNumber(String accountNumber) {
             this.accountNumber = accountNumber;
+            return this;
         }
 
         public Client build(){
