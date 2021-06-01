@@ -13,11 +13,14 @@ import za.ac.cput.Util.GenerateHelper;
 public class ClientFactory {
     public static Client createClient(String firstName, String surname) {
         String clientId = GenerateHelper.generateId();
+        String accountNumber = GenerateHelper.generateAccountNumber();
         Client client = new Client.Builder()
-                .setId(clientId)
+                .setClientID(clientId)
                 .setFirstName(firstName)
                 .setSurname(surname)
+                .setAccountNumber(accountNumber)
                 .build();
+
 
         return client;
     }

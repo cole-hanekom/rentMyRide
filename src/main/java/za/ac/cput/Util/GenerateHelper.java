@@ -15,4 +15,8 @@ public class GenerateHelper {
     public static String generateId(){
         return UUID.randomUUID().toString();
     }
+
+    public static String generateAccountNumber(){
+        return UUID.randomUUID().toString();
+    }
 }
