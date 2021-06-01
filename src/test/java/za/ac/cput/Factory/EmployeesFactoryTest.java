@@ -6,15 +6,13 @@ package za.ac.cput.Factory;
     @Date: 28 May 2021
   */
 import org.junit.jupiter.api.Test;
-import za.ac.cput.Entity.Employees;
-
-import static org.junit.jupiter.api.Assertions.*;
+import za.ac.cput.Entity.Employee;
 
 
 class EmployeesFactoryTest {
     @Test
     public void createEmployees(){
-        Employees employees = EmployeesFactory.createEmployees("Tyronne", "Hendricks","Admin");
+        Employee employees = EmployeesFactory.createEmployees("Tyronne", "Hendricks","Admin","Admin");
         System.out.println(employees);
     }
 
