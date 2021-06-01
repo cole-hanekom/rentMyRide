@@ -11,4 +11,8 @@ public class GenerateHelper {
     public static String generateEmp_Num(){
         return UUID.randomUUID().toString();
     }
+
+    public static String generateId(){
+        return UUID.randomUUID().toString();
+    }
 }
