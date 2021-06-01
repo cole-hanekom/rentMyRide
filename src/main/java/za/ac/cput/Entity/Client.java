@@ -8,29 +8,30 @@ package za.ac.cput.Entity;
  */
 
 public class Client {
-    private String id,firstName,surname;
+    private String clientID,firstName,surname,accountNumber;
 
     private Client(Builder builder) {
-        this.id = builder.id;
+        this.clientID = builder.clientID;
         this.firstName = builder.firstName;
         this.surname = builder.surname;
+        this.accountNumber = builder.accountNumber;
     }
 
     @Override
     public String toString() {
         return "Client{" +
-                "id='" + id + '\'' +
+                "clientID='" + clientID + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", surname='" + surname + '\'' +
+                ", accountNumber='" + accountNumber + '\'' +
                 '}';
     }
 
     public static class Builder{
-        private String id,firstName,surname;
+        private String clientID,firstName,surname,accountNumber;
 
-        public Builder setId(String id) {
-            this.id = id;
-            return this;
+        public void setClientID(String clientID) {
+            this.clientID = clientID;
         }
 
         public Builder setFirstName(String firstName) {
@@ -43,14 +44,19 @@ public class Client {
             return this;
         }
 
+        public void setAccountNumber(String accountNumber) {
+            this.accountNumber = accountNumber;
+        }
+
         public Client build(){
             return new Client(this);
         }
 
         public Builder copy(Client client){
-            this.id = client.id;
+            this.clientID = client.clientID;
             this.firstName = client.firstName;
             this.surname = client.surname;
+            this.accountNumber = client.accountNumber;
             return this;
         }
     }
